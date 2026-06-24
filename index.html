@@ -1,55 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Diego Costa | Shopify Developer</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Diego Costa | Shopify Plus Developer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header class="hero">
-  <div class="container">
-    <h1>Diego Costa</h1>
-    <p class="subtitle">Senior Shopify Developer & CRO & Performance Specialist</p>
-    <p>Over 8 years building Shopify stores, Shopify Plus solutions, custom themes, app integrations, performance optimization and conversion-focused ecommerce experiences.</p>
-    <a class="btn" href="mailto:diegocosta3542@gmail.com">Contact Me</a>
-  </div>
-</header>
+    <header>
+        <div class="container nav">
+            <h2 style="margin-bottom: 0;">DC Diego Costa</h2>
+            <nav>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-<section class="container">
-<h2>About</h2>
-<p>Experienced Shopify developer serving brands across the US, UK and Brazil. Specialized in Liquid, Shopify Plus, Shopify Functions, React, CRO, A/B testing and Core Web Vitals optimization.</p>
+    <section class="hero container">
+        <div class="hero-text">
+            <span>Senior Shopify Plus Developer</span>
+            <h1>Building Shopify Plus Experiences That Drive Growth</h1>
+            <p>Shopify Plus, CRO, Performance Optimization, Custom Themes & Integrations.</p>
+            <a class="btn" href="#">Download Resume</a>
+        </div>
+        <div class="hero-image">
+            <img src="assets/hero.jpg">
+        </div>
+    </section>
 
-<h2>Core Skills</h2>
-<div class="grid">
-<div class="card">Shopify Plus & Liquid</div>
-<div class="card">Custom Themes</div>
-<div class="card">Shopify Functions</div>
-<div class="card">React & JavaScript</div>
-<div class="card">CRO & A/B Testing</div>
-<div class="card">Performance & SEO</div>
-</div>
+    <section id="projects" class="projects">
+        <div class="container">
 
-<h2>Featured Projects</h2>
+            <h2 class="section-title">Featured Projects</h2>
 
-<div class="project">
-<h3>Atlas Performance Gear</h3>
-<p>Theme customization, PDP enhancements, Klarna & Klaviyo integration, analytics implementation and structured A/B testing.</p>
-</div>
+            <div class="projects-grid">
 
-<div class="project">
-<h3>Lumen Skincare</h3>
-<p>Built a custom Shopify theme, integrated marketing and review systems and streamlined merchandising workflows.</p>
-</div>
+                <!-- Atlas -->
+                <div class="project-card">
+                    <div class="project-image" onclick="openModal(this)">
+                        <img src="assets/atlas.jpg" alt="Atlas Performance Gear">
+                    </div>
 
-<div class="project">
-<h3>Urban Thread Co.</h3>
-<p>Custom mega menu, cart drawer, upsells, CRO improvements and performance optimization.</p>
-</div>
+                    <div class="project-content">
+                        <h3>Atlas Performance Gear</h3>
+                        <p>
+                            Shopify Plus customization, GTM, Klaviyo and CRO.
+                        </p>
+                    </div>
+                </div>
 
-<h2>Contact</h2>
-<p>Email: diegocosta3542@gmail.com</p>
-<p>Location: Curitiba, Brazil</p>
-</section>
+                <!-- Urban -->
+                <div class="project-card">
+                    <div class="project-image" onclick="openModal(this)">
+                        <img src="assets/urban.jpg" alt="Urban Thread Co.">
+                    </div>
+
+                    <div class="project-content">
+                        <h3>Urban Thread Co.</h3>
+                        <p>
+                            Mega menu, cart drawer, upsell and A/B testing.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Lumen -->
+                <div class="project-card">
+                    <div class="project-image" onclick="openModal(this)">
+                        <img src="assets/lumen.jpg" alt="Lumen Skincare">
+                    </div>
+
+                    <div class="project-content">
+                        <h3>Lumen Skincare</h3>
+                        <p>
+                            Custom Shopify theme and performance optimization.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- IMAGE MODAL -->
+
+    <div id="imageModal" class="image-modal">
+
+        <span class="close-modal">&times;</span>
+
+        <img id="modalImage" class="modal-image" src="" alt="">
+
+    </div>
+
+    <section id="skills" class="container">
+        <h2>Technical Expertise</h2>
+        <ul style="display: flex;
+    gap: 60px;
+    justify-content: space-around;">
+            <li>Shopify Plus</li>
+            <li>Liquid</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>CRO & A/B Testing</li>
+            <li>Performance Optimization</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="container contact">
+        <h2>Let's Build Something Great Together</h2>
+        <p style="margin-bottom: 5px;">Curitiba, Brazil</p>
+        <a class="" href="mailto:diegocosta3542@gmail.com" style="
+        color: white;">Email: diegocosta3542@gmail.com</a>
+    </section>
+    <div id="imageModal" class="image-modal">
+        <span class="close-modal">&times;</span>
+
+        <img id="modalImage" class="modal-content" src="" alt="">
+    </div>
+    <script src="./index.js"></script>
 </body>
+
 </html>
